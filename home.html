@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Server Site Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* for main box  */
+#box {
+    display: flex;
+    background-image: url(./imges/backimage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 924px;
+}
+
+#box1 {
+    padding-left: 0;
+}
+
+/* for logo  */
+#logo {
+    width: 157px;
+    margin-top: 22px;
+    margin-left: -25px;
+    background: #fff;
+    animation: animation1 5s ease-in 1s infinite backwards;
+}
+
+/* for mobile navbar */
+#navbar-mobile {
+    background: #F4F3F0;
+    height: 120px;
+}
+
+#logo-image {
+    height: 90px;
+    width: 96px;
+    margin: 9px 19px;
+}
+
+#socalul-1 {
+    display: flex;
+    justify-content: center;
+    color: #766554;
+    font-size: 12px;
+    gap: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+#socal-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    height: 40px;
+    margin-top: 30px;
+    border: 0.1px solid #766554;
+    background: #FFF;
+}
+
+#facebook-mobile {
+    list-style: none;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0.1px solid #766554;
+    background: #FFF;
+}
+
+#logo-mobile-search {
+    fill: #766554;
+    height: 15px;
+    width: 15px;
+}
+
+/* for navbar */
+#navbar {
+    top: 47px;
+}
+
+#home1 {
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 31px;
+}
+
+#navmenu {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+/* for sidebar */
+.sidebar {
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+#sidebar-main {
+    width: 50px;
+}
+
+#socalul {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    color: #766554;
+    font-size: 20px;
+    font-weight: 600;
+    transform: rotate(-90deg);
+}
+
+#facebook {
+    list-style: none;
+}
+
+/* for contant  */
+#contents {
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.maincontent {
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 7.2px;
+    font-weight: 600;
+}
+
+#socal-200 {
+    padding-left: 14px;
+    font-size: 60px;
+}
+
+#socal-5 {
+    color: #000;
+    font-size: 60px;
+    letter-spacing: 10.8px;
+}
+
+#contents-1 {
+    margin-top: 245px;
+}
+
+.maincontent-1 {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 7.2px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#socal-200-mini {
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+#socal-5-mini {
+    font-size: 35px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+#product-btn {
+    height: 50px;
+    width: 200px;
+    background: none;
+    border-radius: 30px;
+    border: 1px solid #766554;
+    color: #766554;
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+/* for box 2 */
+#container1 {
+    height: 924px;
+    background: #F4F3F0;
+}
+
+#featur-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    height: 75px;
+    margin-top: 30px;
+}
+
+.heads {
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 7.2px;
+    margin: 0;
+}
+
+#featur-text-box {
+    height: 100px;
+    padding: 6px 70px;
+}
+
+.paratext {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+
+#featur-text {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#featur-image-box {
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    position: relative;
+}
+
+#image-main {
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    border-radius: 450px;
+    background: #FFF;
+}
+
+#featur-image-box-mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 250px;
+    background: #FFF;
+    margin-top: 170px;
+}
+
+#img2 {
+    width: 540px;
+    height: 300px;
+}
+
+#img2-mini {
+    width: 370px;
+    height: 270px;
+}
+
+.bi {
+    width: 50px;
+    height: 50px;
+    background-color: #dddbd6;
+    font-size: 30px;
+    color: #766554;
+    border-radius: 50%;
+    padding: 2px 10px;
+}
+
+.bi-arrow-left-short {
+    position: relative;
+    left: 59px;
+    bottom: 28px;
+    opacity: 0.7;
+
+}
+
+.bi-arrow-right-short {
+    position: relative;
+    right: 59px;
+    bottom: 28px;
+    opacity: 0.7;
+}
+
+#image-left {
+    position: absolute;
+    left: -175px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    border-radius: 350px;
+    background: #FFF;
+}
+
+#img3 {
+    width: 450px;
+    height: 200px;
+    opacity: 0.5;
+    animation: animation1 5s ease-in 1s infinite backwards;
+}
+
+#image-right {
+    position: absolute;
+    right: -170px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    border-radius: 350px;
+    background: #FFF;
+}
+
+#img4 {
+    width: 450px;
+    height: 200px;
+    opacity: 0.5;
+    animation: animation1 5s ease-in 1s infinite backwards;
+}
+
+/* for box 3 */
+#container2 {
+    height: auto;
+    background: #FFF;
+}
+
+#our-products-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F3F0;
+    height: 75px;
+    margin-top: 30px;
+}
+
+.pt {
+    margin: 0;
+}
+
+#our-products-text-box {
+    padding: 10px 25px;
+}
+
+#coffe {
+    margin-top: 25px;
+    animation: animation3 5s ease-in 1s infinite backwards reverse;
+}
+
+.table1 {
+    width: 100%;
+}
+
+.image-name-box {
+    padding: 5px 11px;
+    position: relative;
+    border: 0.5px solid #766554;
+    background: #FFF;
+}
+
+#coffee-text {
+    width: 158px;
+    bottom: 20px;
+    left: 70px;
+}
+
+.txt {
+    color: #766554;
+    font-size: 22px;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+
+#dining {
+    margin-top: 15px;
+    animation: animation2 5s ease-in 1s infinite backwards reverse;
+}
+
+.table2 {
+    width: 100%;
+}
+
+#dining-text {
+    left: 30px;
+    bottom: 20px;
+    width: 155px;
+}
+
+#metalleg {
+    margin-top: 30px;
+    animation: animation3 5s ease-in 1s infinite backwards reverse;
+}
+
+#metal-text {
+    width: 130px;
+    left: 95px;
+    bottom: 20px;
+}
+
+#stool {
+    margin-top: 30px;
+    animation: animation2 5s ease-in 1s infinite backwards reverse;
+}
+
+#stool-text {
+    width: 82px;
+    bottom: 20px;
+    left: 100px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="sidebar-main" class="d-none d-md-flex sidebar">
+            <ul id="socalul">
+                <li id="facebook">Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="container-fluid" id="box1">
+            <!-- for mobile navbar -->
+            <div id="navbar-mobile" class="row d-md-none">
+                <div class="col-4">
+                    <img id="logo-image" src="./imges/logo.png" alt="">
+                </div>
+                <div class="col-8" id="side-nav">
+                    <div id="socal-mobile">
+                        <ul id="socalul-1">
+                            <li id="facebook-mobile">Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                    <button id="search-bar" class="col-12">
+                        <img id="logo-mobile-search" src="./imges/search logo.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-none d-md-flex">
+                    <div id="logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary order-md-2 row d-none d-md-flex">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <a class="navbar-brand" id="home1" href="#">Home</a>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navmenu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Featured Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a><img class="img-fluid" src="./imges/search logo.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div id="contents" class="col-9 d-none d-lg-flex">
+                    <p class="maincontent">Defining Perfection Since<span id="socal-200"
+                            class="maincontent">200</span><span id="socal-5">5...</span></p>
+                </div>
+                <div id="contents-1" class="col-12 d-lg-none">
+                    <div>
+                        <p class="maincontent-1">Defining Perfection Since<span id="socal-200-mini">200</span><span
+                                id="socal-5-mini">5..</span></p>
+                        <div id="btn">
+                            <button id="product-btn">PRODUCTS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container1">
+        <div class="row">
+            <div id="featur-box" class="col-12 col-md-6">
+                <p class="heads">Featured Products</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="featur-text-box" class="col-md-8 col-12">
+                <p id="featur-text" class="paratext">Welcome to our featured products section, here we proudly present
+                    this collection of true
+                    gems
+                    that transcend ordinary expectations and redefine the very essence of excellence.</p>
+            </div>
+        </div>
+        <div id="featur-image-box" class="row">
+            <div id="image-left" class="d-none d-lg-flex col-3">
+                <img id="img3" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fnature-photos&psig=AOvVaw2FV-QO10ojzOWifEyvSIcg&ust=1718388784445000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCNjA0LSk2oYDFQAAAAAdAAAAABAE" alt="Table">
+            </div>
+            <div id="image-main" class="d-none d-sm-flex col-12 col-sm-6">
+                <i class="bi bi-arrow-left-short"></i>
+                <img id="img2" src="./imges/table.png" alt="Table">
+                <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <div id="featur-image-box-mini" class="col-12 d-sm-none">
+                <i class="bi bi-arrow-left-short"></i>
+                <img id="img2-mini" src="./imges/table.png" alt="Table">
+                <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <div id="image-right" class="d-none d-lg-flex col-3">
+                <img id="img4" src="./imges/table2.png" alt="Table">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container2">
+        <div id="our-products-box" class="col-12 col-sm-5">
+            <p class="pt heads">Our Products</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-7">
+                <div id="our-products-text-box" class="col-12 paratext">
+                    <p class="pt">dive into the exquisite realm of our meticulously crafted product categories, where
+                        each piece embodies the artistry of expert craftsmanship. here, the warm embrace of natural wood
+                        seamlessly merges with the sturdy grace of iron, creating furniture that transcends ordinary
+                        standards.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div id="dining" class="col-12 col-sm-8">
+                        <img class="table2" src="./imges/dining table.png" alt="">
+                        <div id="dining-text" class="image-name-box">
+                            <div class="txt">Dining Table</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div id="stool" class="col-12 col-sm-6">
+                        <img class="table1" src="./imges/stool.jfif" alt="">
+                        <div id="stool-text" class="image-name-box">
+                            <div class="txt">Stool</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-5">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div id="coffe" class="col-12 col-sm-8">
+                        <img class="table1" src="./" alt="">
+                        <div id="coffee-text" class="image-name-box">
+                            <div class="txt">Coffee Table</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="metalleg" class="col-12 col-sm-11">
+                    <img class="table2" src="./imges/metal leg.png" alt="">
+                    <div id="metal-text" class="image-name-box">
+                        <div class="txt">Metal Leg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
